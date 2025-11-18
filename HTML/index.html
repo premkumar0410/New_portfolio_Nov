@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header>
+       <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+        <li class="nav-item active" data-section="home">Home</li>
+        <li class="nav-item" data-section="aboutme">About</li>
+        <li class="nav-item" data-section="skills_and_expertise">Skills</li>
+        <li class="nav-item" data-section="projects">Projects</li>
+        <li class="nav-item" data-section="experience">Experience</li>
+        <li class="nav-item" data-section="education">Education</li>
+        <li class="nav-item" data-section="contact">Contact</li>
+        </ul>
+       </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <button class="avail_opportunity">Available for Opportunity</button>
+            <h1 class="user_name">Prem Kumar R</h1>
+            <h3 class="titles">software Developer || Recent Graduate 2025 || Open to Opportunity</h3>
+            <p class="description">Passionate software developer with a strong foundation in modern web technologies and a drive to create impactful solutions. Recently graduated and eager to contribute to innovative projects while continuously learning and growing in the tech industry.</p>
+            <div class="buttons">
+                <button class="view-btn">view Projects</button>
+                <button class="resume-btn" onclick="resumeView()" > <span>⤓</span> Download Resume</button>
+            </div>
+        </section>
+
+        <section id="aboutme" class="aboutme">
+            <h1 class="heading">About Me</h1>
+            <p class="description">Get to know more about my journey, skills, and passion for software development</p>
+
+            <div class="about_section_photo_intro">
+                <div class="photo">
+                    <div class="image_">
+                        <img src="/assets/images/prem.png" style="width:300px; " alt="">
+                    </div>
+
+                </div>
+                <div class="self_intro">
+                    <h3>Passionate About Creating Impact</h3>
+                    <p >Passionate software developer with a strong foundation in modern web technologies and a drive to create impactful solutions. Recently graduated and eager to contribute to innovative projects while continuously learning and growing in the tech industry.</p>
+                    <p >My journey in software development began during my university years, where I discovered my passion for building solutions that make a difference. Through various internships and projects, I've developed strong technical skills and a collaborative mindset.</p>
+                    <div class="highlitter">
+                        <div>Full Stack Developer</div>
+                        <div>Problem Solver</div>
+                        <div>Team Player</div>
+                    </div>
+
+                  
+                </div>
+
+              
+
+            </div>
+
+                <div class="stats">
+                        <div class="stat-box">
+
+                            <span class="count" data-target="4" >4</span>
+                            <p>years Learning</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="count" data-target="5" >5</span>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="count" data-target="7" >7</span>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="count" data-target="1" >1</span>
+                            <p>Internships</p>
+                        </div>
+                        
+
+                    </div>
+        </section>
+
+         <section id="skills_and_expertise" class="skills_and_expertise">
+           <h1 class="heading">Skills & Expertise</h1>
+           <p class="description">A comprehensive overview of my technical and soft skills developed through education, internships, and hands-on projects</p>
+        
+           <div class="language_details">
+                    <div class="coding">
+                        <div class="index_">01</div>
+                        <div class="title_">
+                             &lt;coding &ThinSpace;/&gt; 
+                            </div>
+                            <div class="description_">These are all of the programming languages I have experience with.</div>
+                    </div>
+
+                    <div class="coding_language_content">
+                            <div class="language_content">
+                                <span>Java</span>
+                                <img src="/assets/images/java.png" width="40px" alt="">
+                                <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>Flutter</span>
+                                <img src="/assets/images/flutter.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                                 
+                              <div class="language_content">
+                                <span>MySQL</span>
+                                <img src="/assets/images/mysql.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>HTML</span>
+                                <img src="/assets/images/html.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>CSS</span>
+                                <img src="/assets/images/css.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                        
+                             <div class="language_content">
+                                <span>Spring Boot</span>
+                                <img src="/assets/images/spring-boot.png"  width="40px" alt="">
+                                <div class="rating">⭐️⭐️⭐️</div>
+                            </div>
+                    </div>   
+            </div>
+
+             <div class="language_details">
+                    <div class="coding">
+                        <div class="index_">02</div>
+                        <div class="title_"> { Tools }</div>
+                            <div class="description_">Tools I work with to Develop the apps & scale it.</div>
+                    </div>
+
+                    <div class="coding_language_content">
+                            <div class="language_content">
+                                <span>Git</span>
+                                <img src="/assets/images/git.png" width="40px" alt="">
+                                <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>GitHub</span>
+                                <img src="/assets/images/github.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                                 
+                              <div class="language_content">
+                                <span>PostMan</span>
+                                <img src="/assets/images/postman.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>Toad For Oracle</span>
+                                <img src="/assets/images/oracle.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️⭐️</div>
+                            </div>
+                              <div class="language_content">
+                                <span>Android Studio</span>
+                                <img src="/assets/images/android-studio.png"  width="40px" alt="">
+                                  <div class="rating">⭐️⭐️⭐️⭐️</div>
+                            </div>
+                    </div>   
+            </div>
+                    </div>
+                </div>
+        </section> 
+
+        <section id="projects" class="projects-section">
+            <h1 class="heading">Featured Projects</h1>
+            <p class="description">A showcase of my best work - from full-stack applications to innovative solutions and more...</p>
+            
+            <div class="project-container" id="projectContainer">
+                <!-- js -->
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <h1 class="heading">Work Experience</h1>
+            <p class="description">My professional journey through internships and hands-on experience</p>
+
+            <div class="experience-container">
+                <!-- js -->
+            </div>
+
+        </section>
+
+        <section class="education" id="education">
+            
+            <h1 class="heading">Education</h1>
+            <p class="description">My academic background and continuous learning journey</p>
+
+            <div class="education-container">
+                <div class="education-card">
+                    <div class="education-name">Bachelor of computer science and engineering</div>
+                    <div class="scl-clg_name">Sathyabama university</div>
+                    <div class="education_details">
+                        <div class="dates">2021 - 2025</div>
+                        <div class="cgpa">CGPA: 7.74/10</div>
+                    </div>
+                </div>
+                      <div class="education-card">
+                    <div class="education-name">High School</div>
+                    <div class="scl-clg_name">Sree Iyappa Matric.Hr.School</div>
+                    <div class="education_details">
+                        <div class="dates">2020 - 2021</div>
+                        <div class="cgpa">Mark : 440/600</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading">Work Experience</h1>
+            <p class="description">My professional journey through internships and hands-on experience</p>
+    <div class="contact-container">
+        
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <strong>rprem1042004@gmail.com</strong></p>
+            <p>Phone: <strong>+91 8072681560</strong></p>
+            <p>Location: <strong>Chennai, TN</strong></p>
+
+            <div class="social-icons">
+                <h4>Connect With Me</h4>
+                <a target="_blank" href="https://github.com/premkumar0410"><img src="/assets/images/github.png" alt="GitHub"></a>
+                <a target="_blank" href="www.linkedin.com/in/prem-kumar-r0010"><img src="/assets/images/linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:rprem1042004@gmail.com"><img src="/assets/images/gmail.png" alt="Gmail"></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required />
+                <input type="email" name="user_email" placeholder="Your Email" required />
+                <input type="text" name="subject" placeholder="What's this about?" required />
+                <textarea name="message" rows="5" placeholder="Tell me more..." required></textarea>
+                <button type="submit" id="submit-btn">Send Message ✈️</button>
+            </form>
+            <div id="form-message" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+   
+    <script src="/JS/script.js"></script>
+
+
+
+</body>
+</html>

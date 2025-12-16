@@ -38,68 +38,54 @@ navItems.forEach(item => {
  })
 
  function resumeView(){
-    window.location.href = "/resume.pdf"
+    window.location.href = "/Premkumar R - Resume.pdf"
 
 }
 
+var title_ = "software Developer || Recent Graduate 2025 || Open to Opportunity"
+var title_display = document.getElementById("titles") 
+var count = 0;
+
+var inter = setInterval(() => {
+    if(count == title_.length-1){
+    clearInterval(inter)
+    }
+    title_display.textContent = title_.substring(0,count+1)
+    count++;
+    
+}, 100);
 
 
 // project section
 const projects = [
     {
-        Image: "/assets/images/android-studio.png",
-        title: "E-Commerce Platform",
-        desc: "Full-stack e-commerce application with product management, cart, and checkout.",
-        tech: ["React", "Node.js", "Express", "+2"],
+        Image: "assets/images/project 1.png",
+        title: "Chat Application using Flutter",
+        desc: "Build an Chat Application usinf flutter and firebase which help to create an real time communication between users.",
+        tech: ["Flutter", "Mobile App Development", "Firebase"],
         featured: true,
-        code: "#",
-        demo: "#"
+        code: "https://github.com/premkumar0410/chat_application",
+        demo: "https://drive.google.com/file/d/1pkK1q2ueGm5gzcJaae2SBbRK9T87MpvQ/view?usp=drive_link"
     },
     {
-        Image: "/assets/images/oracle.png",
-        title: "Task Management App",
-        desc: "Collaborative task management tool with real-time updates.",
-        tech: ["Next.js", "TypeScript", "PostgreSQL", "+1"],
+        Image: "assets/images/project 2.png",
+        title: "Wheather Application",
+        desc: "Weather App using web tech where it retrives data from api to chow us the wheather data.",
+        tech: ["Html","Css","JavaScript"],
         featured: true,
-        code: "#",
-        demo: "#"
+        code: "https://github.com/premkumar0410/weather-app",
+        
     },
     {
-        Image: "/assets/images/postman.png",
-        title: "Weather Dashboard",
-        desc: "Real-time weather tracking with beautiful visualizations.",
-        tech: ["React", "Chart.js", "OpenWeather API"],
-        featured: false,
-        code: "#",
-        demo: "#"
-    },
-    {
-        Image: "/assets/images/postman.png",
-        title: "AI Chat Assistant",
-        desc: "Intelligent chatbot powered by machine learning.",
-        tech: ["Python", "Tensorflow", "React", "+1"],
-        featured: false,
-        code: "#",
-        demo: "#"
-    },
-    {
-        Image: "/assets/images/postman.png",
-        title: "Portfolio Builder",
-        desc: "Drag-and-drop responsive portfolio website builder.",
-        tech: ["React", "Node.js", "Firebase"],
+        Image: "assets/images/project 3.png",
+        title: "Bank management System",
+        desc: "Bank management system using oracle SQL andd PL/SQL which helps to manage bank transaction",
+        tech: ["Oracle", "SQL", "PL/SQL"],
         featured: true,
-        code: "#",
-        demo: "#"
+        code: "https://github.com/premkumar0410/oracle_banking",
+    
     },
-    {
-        Image: "/assets/images/postman.png",
-        title: "Fitness Tracker",
-        desc: "Mobile-responsive fitness and workout tracking application.",
-        tech: ["React Native", "Firebase", "TypeScript"],
-        featured: false,
-        code: "#",
-        demo: "#"
-    }
+ 
 ];
 
 // insert card into html for project
@@ -127,8 +113,9 @@ projects.forEach(project => {
         </div>
 
         <div class="project-buttons">
-            <button class="code-btn">💻 Code</button>
+           <a target = "blank_" href="${project.code}">  <button onclick="${project.code}" class="code-btn">💻 Code</button> </a>
         </div>
+
     </div>
     `;
 
